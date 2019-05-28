@@ -6,14 +6,15 @@ env:
     - SHA=$(git rev-parse HEAD)
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 before_install:
-  - openssl aes-256-cbc -K $encrypted_0c35eebf403c_key -iv $encrypted_0c35eebf403c_iv -in spotifire-tokyo-cloud-builder.json.enc -out spotifire-tokyo-cloud-builder.json -d
-  - curl https://sdk.cloud.google.com | bash > /dev/null;
-  - source $HOME/google-cloud-sdk/path.bash.inc
-  - gcloud auth activate-service-account --key-file spotifire-tokyo-cloud-builder.json
-  - gcloud config set project spotifire-tokyo
-  - gcloud config set compute/zone us-west1-c
-
+#  - openssl aes-256-cbc -K $encrypted_0c35eebf403c_key -iv $encrypted_0c35eebf403c_iv -in spotifire-tokyo-cloud-builder.json.enc -out spotifire-tokyo-cloud-builder.json -d
+#  - curl https://sdk.cloud.google.com | bash > /dev/null;
+#  - source $HOME/google-cloud-sdk/path.bash.inc
+#  - gcloud auth activate-service-account --key-file spotifire-tokyo-cloud-builder.json
+#  - gcloud config set project spotifire-tokyo
+#  - gcloud config set compute/zone us-west1-c
+#
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  -
   - docker build -t someonesgarden/spotifire-test -f ./server/Dockerfile ./server
 script:
   - docker run  someonesgarden/spotifire-test npm run test -- --coverage
