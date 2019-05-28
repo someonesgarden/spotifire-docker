@@ -11,4 +11,4 @@
 #kubectl set image deployments/client-deployment client=someonesgarden/spotifire-client:$SHA
 
 docker build -t gcr.io/spotifire-tokyo/spotifire-docker:latest  -f ./server/Dockerfile ./server
-docker push gcr.io/spotifire-tokyo/spotifire-docker:latest
+#docker push gcr.io/spotifire-tokyo/spotifire-docker:latest
