@@ -1,0 +1,58 @@
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition:    $args;
+    -ms-transition:     $args;
+    -o-transition:      $args;
+    transition:         $args;
+}
+
+@mixin transform($args...){
+  -moz-transform:       $args;
+  -webkit-transform:    $args;
+  -o-transform:         $args;
+  -ms-transform:        $args;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin overlay($color, $opacity: 0.6) {
+    background: rgba($color, $opacity)
+}
+
+@mixin layout($direction: 'v') {
+    @if $direction == 'v' {
+        writing-mode:       vertical-rl;
+        ms-writing-mode:    vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+    } @else {
+        writing-mode:     horizontal-tb;
+        ms-writing-mode:  horizontal-tb;
+        -webkit-writing-mode: horizontal-tb;
+    }
+}
+
+@mixin bg($size:cover, $pos:center center, $img:''){
+    background-size:$size;
+    background-position: $pos;
+
+    @if $size == contain {
+        background-repeat: no-repeat;
+    }
+
+    @if $img != '' {
+        background-image:$img;
+    }
+}
+
+@mixin flex($direction: 'v'){
+    @if $direction == 'v' {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}

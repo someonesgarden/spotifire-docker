@@ -1,0 +1,221 @@
+.aside{
+  width:100%;
+  padding:0 2px;
+  height:calc(100vh - 16px);
+  font-size:11px;
+
+  .col{
+    padding-left:4px;
+    padding-right:4px;
+  }
+
+  .mu-select-input{
+    font-size:10px;
+  }
+
+  .mu-text-field-input{
+    text-align:center;
+  }
+
+  .mu-form-item-label{
+    font-size:10px;
+  }
+
+  .mu-checkbox-icon,.mu-checkbox-svg-icon{
+    width:16px;
+    height:16px;
+    margin-right: 3px;
+  }
+
+  .mu-radio-svg-icon{
+    width:16px;
+    height:16px;
+  }
+
+  .mu-text-field-input{
+    font-size:9px;
+  }
+
+  .mu-form-item{
+    margin-bottom:0;
+    padding-top:0;
+    padding-bottom:0;
+    min-height:20px;
+
+    &.range{
+      width:100%;
+      padding-bottom:0;
+      margin-bottom:0;
+      padding-top:0;
+      min-height:inherit;
+
+    }
+  }
+
+  .mu-radio{
+    font-size:11px !important;
+    .mu-radio-wrapper{
+      .mu-radio-label{
+        font-size:11px;
+      }
+    }
+  }
+
+  .mu-input{
+    font-size:12px;
+    &.range{
+      width:100%;
+      padding-bottom:0;
+      margin-bottom:0;
+      min-height:inherit;
+      padding-top:0;
+    }
+  }
+
+  .mu-button{
+    &.mu-raised-button{
+      min-width:40px;
+    }
+  }
+
+  .row{
+    &.range{
+      .col{
+        padding-right:0;
+        padding-left:0;
+      }
+    }
+  }
+}
+
+
+.listaside{
+
+  .container{
+    &.range{
+      padding:0;
+    }
+  }
+
+  .mu-flat-button{
+      min-width:inherit;
+      &.active{
+        border-bottom:2px solid $green;
+        font-weight:bold;
+      }
+  }
+
+  ul.mu-list{
+
+    .row{
+      margin-right:0;
+      margin-left:0;
+    }
+
+    li.range{
+      width:100%;
+      margin:0;
+
+      &.feature{
+        .mu-item{
+          height:16px;
+        }
+      }
+
+      .mu-item{
+        padding:0;
+        margin:0;
+        .mu-avatar{
+          .mu-avatar-inner{
+            img{
+              border-radius:4px;
+            }
+          }
+        }
+
+        .mu-item-title{
+          font-size:10px;
+          margin-left:3px;
+        }
+
+        .mu-item-sub-title{
+          font-size:8px;
+          margin-left:3px;
+        }
+        .mu-item-action{
+          min-width:inherit;
+        }
+      }
+
+    }
+
+    li.playlist{
+      .mu-item{
+        &.has-avatar{
+          min-height:56px;
+          height:auto !important;
+        }
+
+
+
+        .album_area{
+          margin:2px 6px 6px 2px;
+          padding:3px;
+          border-radius:4px;
+          background-color: #70676a;
+          color:white;width:100%;
+
+          &.filtered{
+            background-color: #ce8427;
+
+            &.over{
+              background-color: #c40043;
+            }
+          }
+
+          &.over{
+            background-color: #20b4a6;
+          }
+
+
+        }
+      }
+
+    }
+  }
+
+  .mu-chip{
+    &.range{
+      margin: 4px;
+      vertical-align: middle;
+    }
+  }
+  .mu-card{
+    .mu-card-text{
+      padding:5px;
+      font-size:8px;
+    }
+  }
+
+  .mu-tabs{
+
+    &.range{
+
+      padding:5px;
+      font-size:10px;
+      width:100%;
+      margin-bottom:10px;
+
+      .mu-tab{
+        min-width:inherit;
+        width:100%;
+
+        .mu-tab-wrapper{
+          min-height:18px;
+          padding:inherit;
+        }
+      }
+    }
+
+  }
+}

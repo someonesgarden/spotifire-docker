@@ -1,0 +1,105 @@
+@import "variables";
+@import "mixins";
+@import "animations";
+@import "base";
+@import "optional";
+@import "parts/spotify/player.scss";
+@import "parts/twitter/twitter_h.scss";
+@import "parts/top";
+@import "parts/aside";
+@import "parts/bottom";
+@import "parts/map/base";
+
+/* FLEX */
+.flex_v{
+  @include flex('v');
+  //height: calc(100vh - 60px);
+  //text-align:center;
+
+  .base{
+    width:100%;
+    padding:20px 12px;
+  }
+}
+.flex_h{
+  @include flex('h');
+  .base{
+    width:100%;
+    padding:20px 12px;
+  }
+}
+
+.flex-wrapper {
+  width: 100%;
+  height: 56px;
+  margin-top: 8px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.fix200x32 {
+  width: 200px;
+  height: 32px;
+  background-color: $gold;
+  color:$white;
+  text-align: center;
+  line-height: 32px;
+  margin-left: 8px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+
+// app root
+.app-wrap {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  min-height: 100vh;
+  width: 100%;
+
+  &.News, &.Top{
+    margin-top:90px;
+    padding-bottom:120px;
+  }
+
+
+  // headings
+  h1, h2, h3, h4, h5, h6 {
+    display: block;
+    font-weight: normal;
+    line-height: 1.1em;
+  }
+  h1 { font-size: 220%; }
+  h2 { font-size: 180%; }
+  h3 { font-size: 160%; }
+  h4 { font-size: 140%; }
+  h5 { font-size: 120%; }
+  h6 { font-size: 100%; }
+}
+
+
+//.VueCarousel-slide {
+//  height:100px;
+//  color:#FFF;
+//  background:#59ecff;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  border-right:1px solid #FFF;
+//  box-sizing:border-box;
+//  font-size:12px;
+//  text-align:center;
+//}
+
+.VueCarousel-pagination{
+  visibility: hidden;
+  display:none;
+}

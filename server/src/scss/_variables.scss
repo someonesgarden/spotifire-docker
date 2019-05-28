@@ -1,0 +1,108 @@
+
+// COLORS
+$black:   #191414;
+$black2:  #3a3544;
+$white:   #ffffff;
+$gold:    #b6a158;
+$blue:    #1aacd1;
+$light:   #C9C9C9;
+$dark:    #333333;
+$gray:    #030303;
+$silver:  #888888;
+$green: #0cad69;
+$red:     #f11425;
+
+// ANIMES
+$easeInOutQuad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$pageSwithingTime: 0.5s;
+$standardMeasure: 15px;
+
+// FONTS
+$headline_font:     'Montserrat';
+$basic_font:        'Raleway';
+$stencil_font:      'Allerta Stencil';
+$yu_mincho_font:     游明朝, "Yu Mincho", YuMincho;
+$yu_gothic_font:    "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic;
+$hiragino_font:     "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "Hiragino Mincho ProN";
+$hiragino_go_font:  "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN";
+$ms_gothic_font:    "ＭＳ Ｐゴシック", "MS PGothic";
+$meiryo_font:       メイリオ, Meiryo;
+$noto_font:         "Noto Sans Japanese";
+$yakuhan_font:      YakuHanJPs;
+
+$mincho:            'Raleway',游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+$mincho_firefox:    游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+$mincho2:           "游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,sans-serif;
+
+$gothic:            -apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+$gothic2:       "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+
+
+// PLAYER
+$padSpace: 1em;
+$padSmall: $padSpace / 2;
+$headerHeight: 3.5em;
+// $bgImg: 'https://raw.githubusercontent.com/rainner/soma-fm-player/master/public/img/bg.jpg';
+$bgImg: '/static/img/bg1.jpg';
+
+// document colors
+$colorDocument: #8086a0;
+$colorDocumentDark: #1e1f30;
+$colorDocumentDarker: darken( $colorDocumentDark, 10% );
+$colorDocumentLight: #a0a6b0;
+$colorDocumentLight2: #d3edef;
+$colorDocumentText: desaturate( lighten( $colorDocumentDark, 40% ), 5% );
+
+// common colors
+$gradPrimary: #ffeedc;
+$gradSecondary: #01c4f9;
+$gradDocument: #c3ddeb;
+
+$colorPrimary: #00dae1;
+$colorPrimaryText: lighten( $colorPrimary, 40% );
+$colorSecondary: #2daced;
+$colorSecondaryText: darken( $colorSecondary, 40% );
+$colorDefault: lightslategray;
+$colorDefaultText: darken( $colorDefault, 40% );
+$colorGrey: slategray;
+$colorGreyText: darken( $colorGrey, 40% );
+$colorBright: whitesmoke;
+$colorBrightText: darken( $colorBright, 40% );
+$colorOverlay: rgba( black, 0.4 );
+$colorCard: rgba( black, 0.08 );
+
+// borders and lines
+$lineWidth: 2px;
+$lineStyle: solid;
+$lineColor: rgba( black, 0.08 );
+$lineJoin: 6px;
+
+// base font options
+$fontFamily: 'Roboto Condensed', sans-serif;
+$fontSize: 20px;
+$fontSpace: 1.2em;
+$fontWeight: 700;
+
+// shadow styles
+$shadowContainer: 0 1px 30px rgba( black, 0.8 );
+$shadowOverlay: 0 1px 20px rgba( black, 0.6 );
+$shadowPaper: 0 1px 3px rgba( black, 0.5 );
+
+// transition props
+$fxSpeed: 400ms;
+$fxEase: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+$fxSpeedOffset: calc( #{$fxSpeed} / 3 );
+$fxSlideDist: 80px;
+$fxShrinkScale: .4;
+$fxGrowScale: 1.4;
+$fxRotateAmount: 8deg;
+
+// screen sizes
+$sizeSmall: 420px;
+$sizeMedium: 720px;
+$sizeLarge: 1200px;
+
+// screen breakpoints
+$screenSmall: "only screen and (min-width : #{$sizeSmall})";
+$screenMedium: "only screen and (min-width : #{$sizeMedium})";
+$screenLarge: "only screen and (min-width : #{$sizeLarge})";

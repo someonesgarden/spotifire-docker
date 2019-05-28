@@ -1,0 +1,103 @@
+// page reset
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  text-transform: none;
+  text-shadow: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform-style: flat;
+  transition:
+          border-color $fxSpeed $fxEase,
+          background-color $fxSpeed $fxEase,
+          opacity $fxSpeed $fxEase,
+          transform $fxSpeed $fxEase;
+}
+
+body {
+  margin: 0;
+  background:inherit;
+  background-size: cover;
+  background-color: $colorDocument;
+  background-image:
+          linear-gradient( 217deg, rgba( $gradPrimary, .8 ), rgba( $gradPrimary, 0 ) 70.71% ),
+          linear-gradient( 127deg, rgba( $gradDocument, 1 ), rgba( $gradDocument, 0 ) 70.71% ),
+          linear-gradient( 336deg, rgba( $gradSecondary, .8 ), rgba( $gradSecondary, 0 ) 70.71% );
+  #app {
+    // font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family:  $mincho !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+bodh,html{
+  height:inherit;
+}
+
+h1,h2,h3,h4,h5{
+  font-family:  $mincho !important;
+}
+
+a{
+  cursor: pointer;
+}
+
+/* TEXT */
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+
+// media query helpers
+.if-small {
+  display: none;
+  @media #{$screenSmall} {
+    display: initial;
+  }
+}
+.if-medium {
+  display: none;
+  @media #{$screenMedium} {
+    display: initial;
+  }
+}
+.if-large {
+  display: none;
+  @media #{$screenLarge} {
+    display: initial;
+  }
+}
+
+// not rendered
+.hidden, [hidden], [v-cloak] {
+  display: none;
+}
+
+// visible but not usable
+.disabled, [disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+// clickable elms
+.clickable {
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/static/css/spotify_callback.css')
+    script(src='/static/js/spotify_callback.js')
+    script.
+        let res = !{!!result ? JSON.stringify(result) : JSON.stringify({})};
+        setFormInput(res);
+  body
+

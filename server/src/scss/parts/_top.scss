@@ -1,0 +1,72 @@
+.card{
+  border:thin solid #fff;
+  padding:10px;
+  margin-bottom:12px;
+  background-color: rgba(255,255,255, 0.06);
+  box-shadow: 0 0 3px rgba( black, 0.3 );
+  border-radius:3px;
+  .inner{
+    width:100%;
+    h1,h2,h3,h4,p{
+      margin:0;
+      word-break:break-all;
+    }
+
+    h1{
+      margin-bottom:10px;
+    }
+  }
+
+  img{
+    border:thin solid white !important;
+    margin:8px 0 !important;
+  }
+
+  h1 {
+    font-size: 150%;
+    line-height:130%;
+  }
+  h3 {
+    font-size: 120%;
+
+    color:#222;
+  }
+  p { font-size:70%;}
+
+  .tweets{
+    position:relative;
+
+    border-top:thin solid #464549;
+    margin-top:12px;
+
+
+    .header{
+      width:100%;
+      display:block;
+      color: #ff113d;
+    }
+
+    .inner{
+      display:block;
+      width:100%;
+      background-color:rgba(255,255,255,0.1);
+      box-shadow: 0 0 2px rgba( black, 0.1);
+      padding:3px;
+    }
+  }
+
+  &.large{
+    h1 {
+      font-size: 250%;
+      line-height:130%;
+    }
+
+    h2 { font-size: 200%; }
+    h3 { font-size: 180%; }
+    h4 { font-size: 160%; }
+    h5 { font-size: 140%; }
+    h6 { font-size: 120%; }
+    p { }
+  }
+
+}

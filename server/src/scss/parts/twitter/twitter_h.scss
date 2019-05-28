@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/*/////////////////////////////////////////////////
+//twitter風チャット画面(会話方式)を記事に表示する方法
+/////////////////////////////////////////////////*/
+
+// color
+$baseColor:   #58aeed; //ベースカラー
+
+/*///////////////////////////////////////////////*/
+
+.twitter__container {
+  padding:0;
+  margin: 0 auto;
+  font-size: 80%;
+
+  a {
+    color: $baseColor;
+  }
+
+  .twitter__block {
+    //background-color:#fff;
+    width:100%;
+    display: block;
+    padding: 10px;
+    margin:1px;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    /* アイコン画像 */
+    figure {
+      width: 50px;
+      padding: 0;
+      margin: 0;
+      float: left;
+      width: 50px;
+
+      /* 正方形を用意 */
+      img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      }
+    }
+    /* コメントエリア */
+    .twitter__block-text {
+      margin: 0;
+      position: relative;
+      margin-left: 60px;
+      padding-right: 10px;
+
+      .name {
+        font-weight: bold;
+
+        .name_reply {
+          color: #8a9aa4;
+          margin-left: 10px;
+        }
+      }
+
+      .date {
+        position: absolute;
+        top:0;
+        right: 20px;
+        text-align:right;
+        color: #8a9aa4;
+      }
+
+      .text {
+
+        margin: 5px 0;
+
+        .in-pict img{
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          margin: 5px 0;
+          width: 95%;
+          height: 200px;
+          object-fit: cover;
+        }
+      }
+
+      /*///////////////////////////////////////////
+      //埋め込みアイコン
+      ////////////////////////////////////////////*/
+
+      .twitter__icon {
+
+        br {
+          display: none;
+        }
+
+        $icons: 'twitter-bubble', 'twitter-heart', 'twitter-loop';
+
+        @each $icon in $icons {
+          .#{$icon} {
+            width: 14px;
+            height: 14px;
+            display: block;
+            padding-left: 20px;
+            background: url('/static/svg/' + $icon + '.svg') left no-repeat;
+            width: 20%;
+            float: left;
+            color: #8a9aa4;
+          }
+        }
+      }
+
+    }
+  }
+}
