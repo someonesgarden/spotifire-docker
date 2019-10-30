@@ -10,7 +10,7 @@
     "nodemon": "1.18.3",
     "pg": "7.4.3",
     "redis": "2.8.0",
-    "sequelize": "^5.8.6",
+    "sequelize": "^5.15.1",
     "socket.io": "^2.2.0",
     "spotify-web-api-node": "^4.0.0",
     "twitter": "^1.7.1",
